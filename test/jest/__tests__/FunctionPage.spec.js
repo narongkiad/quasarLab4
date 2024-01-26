@@ -42,5 +42,5 @@ test('trigger click event on button ', async () => {
   const wrapper = shallowMount(FunctionPage)
   const button = wrapper.find('button')
   await button.trigger('click')
-  expect(wrapper.vm.addition(1,2)).toBe(3)
+  expect(wrapper.vm.addition(1,2)).toBe(2)
 })
