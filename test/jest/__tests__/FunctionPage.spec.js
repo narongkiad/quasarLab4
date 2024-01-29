@@ -7,7 +7,7 @@ describe('IndexPage', () => {
     let header = wrapper.find('.htmlClass h1')
     expect(header.exists()).toBe(true)
     expect(header.text())
-      .toBe('Vue is awesome.')
+      .toBe('Narongkiad Namhuaithong 6404101312')
   })
 })
 
@@ -42,5 +42,5 @@ test('trigger click event on button ', async () => {
   const wrapper = shallowMount(FunctionPage)
   const button = wrapper.find('button')
   await button.trigger('click')
-  expect(wrapper.vm.addition(1,2)).toBe(2)
+  expect(wrapper.vm.addition(1,2)).toBe(3)
 })

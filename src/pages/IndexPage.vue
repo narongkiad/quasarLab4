@@ -1,6 +1,7 @@
 <template>
   <div class="htmlClass">
     <h1>{{ title }}</h1>
+
     <form>
       <input type="text" id="firstValue" v-model="firstValue" />
       <input type="text" id="secondValue" v-model="secondValue" />
@@ -18,10 +19,10 @@ export default {
   name: 'HtmlComponent',
   data() {
     return {
-      title: 'Vue is awesome.',
+      title: 'Narongkiad Namhuaithong 6404101312',
       firstValue:0,
       secondValue:0,
-      answerVulue:0
+      answerVulue:0,
     }
   },
   methods: {
