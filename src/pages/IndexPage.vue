@@ -6,6 +6,11 @@
       <input type="text" id="firstValue" v-model="firstValue" />
       <input type="text" id="secondValue" v-model="secondValue" />
       <input type="text" id="answerVulue" v-model="answerVulue" />
+
+      <input type="text" id="firstName" v-model="firstName" />
+      <input type="text" id="lastName" v-model="lastName" />
+      <input type="text" id="id" v-model="id" />
+
       <button @click="addition(firstValue,secondValue)" >Addition</button>
       <button @click="subtraction(firstValue,secondValue)" >Subtraction</button>
       <button @click="multiplication(firstValue,secondValue)" >Multiplication</button>
@@ -19,10 +24,13 @@ export default {
   name: 'HtmlComponent',
   data() {
     return {
-      title: 'Narongkiad Namhuaithong 6404101312',
+      title: 'Vue is Awesome',
       firstValue:0,
       secondValue:0,
       answerVulue:0,
+      firstName:"Narongkiad",
+      lastName:"Namhuaithong",
+      id:"6404101312"
     }
   },
   methods: {
